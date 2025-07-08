@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jaivir Yadav - Portfolio</title>
+  <style>
+    body {
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    h1.animate-name {
+      text-align: center;
+      font-size: 48px;
+      font-weight: bold;
+      letter-spacing: 10px;
+      margin-top: 50px;
+    }
+
+    h1.animate-name span {
+      display: inline-block;
+      color: darkblue;
+      opacity: 0;
+      transform: translateY(-20px);
+      animation: fadeInBounce 1.5s infinite;
+    }
+
+    /* Stagger animation timing */
+    h1.animate-name span:nth-child(1) { animation-delay: 0s; }
+    h1.animate-name span:nth-child(2) { animation-delay: 0s; }
+    h1.animate-name span:nth-child(3) { animation-delay: 0s; }
+    h1.animate-name span:nth-child(4) { animation-delay: 0s; }
+    h1.animate-name span:nth-child(5) { animation-delay: 1s; }
+    h1.animate-name span:nth-child(6) { animation-delay: 1s; }
+
+    @keyframes fadeInBounce {
+      0% {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      30% {
+        opacity: 1;
+        transform: translateY(10px);
+      }
+      60% {
+        transform: translateY(0);
+      }
+      100% {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+    }
+
+    .section {
+      background-color: white;
+      padding: 20px;
+      margin: 20px auto;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    h2 {
+      color: darkgreen;
+    }
+
+    ul {
+      margin-left: 20px;
+    }
+
+    a {
+      color: blue;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Animated Name -->
+    <h1 class="animate-name">
+      <span>J</span><span>A</span><span>I</span><span>V</span><span>I</span><span>R</span>
+    </h1>
+
+    <p style="text-align:center;">Student | Dronacharya College of Engineering</p>
+
+    <div class="section">
+      <h2>About Me</h2>
+      <p>I am a Computer Science student with knowledge in C, Python, Java, and C++. I'm passionate about software development and also interested in marketing and sales.</p>
+    </div>
+
+    <div class="section">
+      <h2>Skills</h2>
+      <ul>
+        <li>C Language (IIT Bombay Certified)</li>
+        <li>Python</li>
+        <li>Java</li>
+        <li>C++</li>
+        <li>HTML & CSS</li>
+        <li>Marketing & Sales</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Projects</h2>
+      <ul>
+        <li>Student Management System (C++)</li>
+        <li>Simple Calculator (Java)</li>
+        <li>Portfolio Website (HTML + CSS)</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Contact</h2>
+      <p>Email: jaiviryadav16@gmail.com</p>
+      <p>LinkedIn: <a href="#">Your Profile Link</a></p>
+    </div>
+
+    <div class="section">
+      <h2>Download My Resume</h2>
+      <p><a href="Jaivir_Yadav_Resume.pdf" download>Click here to download</a></p>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 Jaivir Yadav. All rights reserved.</p>
+    </footer>
+  </div>
+
+</body>
+</html>
